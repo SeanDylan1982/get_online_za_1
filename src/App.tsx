@@ -15,44 +15,31 @@ import {
 } from 'lucide-react';
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from 'react-image-gallery';
-import './index.css';
-import gallery1 from '../src/img/gallery1.png';
-import gallery11 from '../src/img/gallery1-1.png';
-import gallery2 from '../src/img/gallery2.png';
-import gallery21 from '../src/img/gallery2-1.png';
-import gallery3 from '../src/img/gallery3.png';
-import gallery31 from '../src/img/gallery3-1.png';
-import gallery4 from '../src/img/gallery4.png';
-import gallery41 from '../src/img/gallery4-1.png';
-import gallery5 from '../src/img/gallery5.png';
-import gallery51 from '../src/img/gallery5-1.png';
-import gallery6 from '../src/img/gallery6.png';
-import gallery61 from '../src/img/gallery6-1.png';
 
 const images = [
   {
-    original: { gallery1 },
-    thumbnail: { gallery11 },
+    original: "../src/img/gallery1.png",
+    thumbnail: "../src/img/gallery1-1.png",  
   },
   {
-    original: { gallery2 },
-    thumbnail: { gallery21 },
+    original: "../src/img/gallery2.png",
+    thumbnail: "../src/img/gallery2-1.png",
   },
   {
-    original: { gallery3 },
-    thumbnail: { gallery31 },
+    original: "../src/img/gallery3.png",
+    thumbnail: "../src/img/gallery3-1.png",
   },
   {
-    original: { gallery4 },
-    thumbnail: { gallery41 },
+    original: "../src/img/gallery4.png",
+    thumbnail: "../src/img/gallery4-1.png",
   },
   {
-    original: { gallery5 },
-    thumbnail: { gallery51 },
+    original: "../src/img/gallery5.png",
+    thumbnail: "../src/img/gallery5-1.png",
   },
   {
-    original: { gallery6 },
-    thumbnail: { gallery61 },
+    original: "../src/img/gallery6.png",
+    thumbnail: "../src/img/gallery6-1.png",
   },
 ];
 

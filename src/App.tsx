@@ -18,28 +18,40 @@ import ImageGallery from 'react-image-gallery';
 
 const images = [
   {
-    original: "../public/img/gallery1.png",
-    thumbnail: "../public/img/gallery1-1.png",  
+    original:
+      "https://github.com/SeanDylan1982/get_online_za_1/blob/main/public/img/gallery1.png",
+    thumbnail:
+      "https://github.com/SeanDylan1982/get_online_za_1/blob/main/public/img/gallery1-1.png",
   },
   {
-    original: "../public/img/gallery2.png",
-    thumbnail: "../public/img/gallery2-1.png",
+    original:
+      "https://github.com/SeanDylan1982/get_online_za_1/blob/main/public/img/gallery2.png",
+    thumbnail:
+      "https://github.com/SeanDylan1982/get_online_za_1/blob/main/public/img/gallery2-1.png",
   },
   {
-    original: "../public/img/gallery3.png",
-    thumbnail: "../public/img/gallery3-1.png",
+    original:
+      "https://github.com/SeanDylan1982/get_online_za_1/blob/main/public/img/gallery3.png",
+    thumbnail:
+      "https://github.com/SeanDylan1982/get_online_za_1/blob/main/public/img/gallery3-1.png",
   },
   {
-    original: "../public/img/gallery4.png",
-    thumbnail: "../public/img/gallery4-1.png",
+    original:
+      "https://github.com/SeanDylan1982/get_online_za_1/blob/main/public/img/gallery4.png",
+    thumbnail:
+      "https://github.com/SeanDylan1982/get_online_za_1/blob/main/public/img/gallery4-1.png",
   },
   {
-    original: "../public/img/gallery5.png",
-    thumbnail: "../public/img/gallery5-1.png",
+    original:
+      "https://github.com/SeanDylan1982/get_online_za_1/blob/main/public/img/gallery5.png",
+    thumbnail:
+      "https://github.com/SeanDylan1982/get_online_za_1/blob/main/public/img/gallery5-1.png",
   },
   {
-    original: "../public/img/gallery6.png",
-    thumbnail: "../public/img/gallery6-1.png",
+    original:
+      "https://github.com/SeanDylan1982/get_online_za_1/blob/main/public/img/gallery6.png",
+    thumbnail:
+      "https://github.com/SeanDylan1982/get_online_za_1/blob/main/public/img/gallery6-1.png",
   },
 ];
 

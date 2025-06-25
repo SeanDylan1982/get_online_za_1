@@ -18,27 +18,27 @@ import ImageGallery from 'react-image-gallery';
 
 const images = [
   {
-    original: "../src/img/gallery1.webp",
+    original: "../src/img/gallery1.png",
     thumbnail: "../src/img/gallery1-1.png",  
   },
   {
-    original: "../src/img/gallery2.webp",
+    original: "../src/img/gallery2.png",
     thumbnail: "../src/img/gallery2-1.png",
   },
   {
-    original: "../src/img/gallery3.webp",
+    original: "../src/img/gallery3.png",
     thumbnail: "../src/img/gallery3-1.png",
   },
   {
-    original: "../src/img/gallery4.webp",
+    original: "../src/img/gallery4.png",
     thumbnail: "../src/img/gallery4-1.png",
   },
   {
-    original: "../src/img/gallery5.webp",
+    original: "../src/img/gallery5.png",
     thumbnail: "../src/img/gallery5-1.png",
   },
   {
-    original: "../src/img/gallery6.webp",
+    original: "../src/img/gallery6.png",
     thumbnail: "../src/img/gallery6-1.png",
   },
 ];

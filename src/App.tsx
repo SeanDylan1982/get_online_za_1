@@ -15,30 +15,31 @@ import {
 } from 'lucide-react';
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from 'react-image-gallery';
+import './index.css';
 
 const images = [
   {
-    original: "../src/img/gallery1.png",
+    original: "/src/img/gallery1.png",
     thumbnail: "../src/img/gallery1-1.png",  
   },
   {
-    original: "../src/img/gallery2.png",
+    original: "/src/img/gallery2.png",
     thumbnail: "../src/img/gallery2-1.png",
   },
   {
-    original: "../src/img/gallery3.png",
+    original: "/src/img/gallery3.png",
     thumbnail: "../src/img/gallery3-1.png",
   },
   {
-    original: "../src/img/gallery4.png",
+    original: "/src/img/gallery4.png",
     thumbnail: "../src/img/gallery4-1.png",
   },
   {
-    original: "../src/img/gallery5.png",
+    original: "/src/img/gallery5.png",
     thumbnail: "../src/img/gallery5-1.png",
   },
   {
-    original: "../src/img/gallery6.png",
+    original: "/src/img/gallery6.png",
     thumbnail: "../src/img/gallery6-1.png",
   },
 ];
@@ -848,7 +849,7 @@ function App() {
 
             {/* Contact Form */}
             <div>
-              <form className="space-y-6">
+              <form className="space-y-6" name="contact" netlify>
                 <div>
                   <label
                     htmlFor="name"

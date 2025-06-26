@@ -713,13 +713,13 @@ function App() {
           </div>
           <ImageGallery
             items={images}
-            showPlayButton={false}
+            showPlayButton={true}
             autoPlay={true}
-            showFullscreenButton={false}
-            slideDuration={1000}
-            slideInterval={5000}
+            showFullscreenButton={true}
+            slideDuration={1500}
+            slideInterval={7000}
             infinite={true}
-            showNav={false}
+            showNav={true}
           />
           ;
         </div>
@@ -1018,7 +1018,7 @@ function App() {
                     <h4 className="font-semibold text-gray-900">
                       Call or WhatsApp
                     </h4>
-                    <p className="text-gray-600">+27 64 988 4235</p>
+                    <p className="text-gray-600"><a href="tel:+27 64 988 4235"> +27 64 988 4235</a></p>
                     <p className="text-sm text-gray-500">
                       Available 8am-6pm, Mon-Fri
                     </p>
@@ -1029,7 +1029,7 @@ function App() {
                   <Mail className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600">hello@getonlineza.co.za</p>
+                    <p className="text-gray-600"><a href="mailto:hello@getonlineza.co.za"> hello@getonlineza.co.za</a></p>
                     <p className="text-sm text-gray-500">
                       I usually respond within 2 hours
                     </p>
@@ -1056,7 +1056,7 @@ function App() {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458313.926244964!2d27.966705329199637!3d-26.177884342416256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953b130fe6fc71%3A0x902bd4f28795ce54!2sCity%20of%20Ekurhuleni%20Metropolitan%20Municipality!5e0!3m2!1sen!2sza!4v1750930701466!5m2!1sen!2sza"
                 width="385"
-                height="300"
+                height="400"
                 loading="lazy"
               ></iframe>
             </div>
@@ -1106,6 +1106,21 @@ function App() {
                     id="phone"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="Best number to reach you"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Email Address
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="If you'd prefer a reply in writing"
                   />
                 </div>
 

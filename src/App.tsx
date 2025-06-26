@@ -1040,20 +1040,23 @@ function App() {
                     <h4 className="font-semibold text-gray-900">
                       Quick Questions
                     </h4>
-                    <p className="text-gray-600" style={{
-                      marginBottom: "20px",
-                    }}>
+                    <p
+                      className="text-gray-600"
+                      style={{
+                        marginBottom: "20px",
+                      }}
+                    >
                       Use the form, or just call – whatever's easier for you.
                     </p>
                   </div>
                 </div>
               </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458313.926244964!2d27.966705329199637!3d-26.177884342416256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953b130fe6fc71%3A0x902bd4f28795ce54!2sCity%20of%20Ekurhuleni%20Metropolitan%20Municipality!5e0!3m2!1sen!2sza!4v1750930701466!5m2!1sen!2sza"
-              width="385"
-              height="300"
-              loading="lazy"
-            ></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458313.926244964!2d27.966705329199637!3d-26.177884342416256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953b130fe6fc71%3A0x902bd4f28795ce54!2sCity%20of%20Ekurhuleni%20Metropolitan%20Municipality!5e0!3m2!1sen!2sza!4v1750930701466!5m2!1sen!2sza"
+                width="385"
+                height="300"
+                loading="lazy"
+              ></iframe>
             </div>
 
             {/* Contact Form */}
@@ -1156,8 +1159,10 @@ function App() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-6">
-              <Globe className="h-8 w-8 text-blue-400" />
-              <span className="text-2xl font-bold">GetOnlineZA</span>
+              <a href="#home">
+                <img src="../img/logo.png" style={{ width: "50px", height: "50px" }}></img>
+              </a>
+                <span className="text-2xl font-bold">GetOnlineZA</span>
             </div>
             <p className="text-gray-400 mb-6">
               Helping small businesses get found online, one website at a time.

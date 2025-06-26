@@ -730,10 +730,11 @@ function App() {
                 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj"
                 style={{ marginBottom: "35px" }}
               >
-                What our happy clients have to say about us
+                What some our clients have to say about us...
               </h2>
               <p className="text-lg font-medium text-gray-600 font-pj">
-                Loads of people have said how good we are
+                Loads of people have said how good we are at what we do and we
+                love to share."
               </p>
             </div>
 
@@ -837,6 +838,7 @@ function App() {
                           className="flex-shrink-0 object-cover rounded-full w-11 h-11"
                           src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png"
                           alt=""
+                          style={{ marginBottom: "35px" }}
                         />
                         <div className="ml-4" style={{ marginBottom: "35px" }}>
                           <p className="text-base font-bold text-gray-900 font-pj">
@@ -1038,12 +1040,20 @@ function App() {
                     <h4 className="font-semibold text-gray-900">
                       Quick Questions
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600" style={{
+                      marginBottom: "20px",
+                    }}>
                       Use the form, or just call – whatever's easier for you.
                     </p>
                   </div>
                 </div>
               </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458313.926244964!2d27.966705329199637!3d-26.177884342416256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953b130fe6fc71%3A0x902bd4f28795ce54!2sCity%20of%20Ekurhuleni%20Metropolitan%20Municipality!5e0!3m2!1sen!2sza!4v1750930701466!5m2!1sen!2sza"
+              width="385"
+              height="300"
+              loading="lazy"
+            ></iframe>
             </div>
 
             {/* Contact Form */}

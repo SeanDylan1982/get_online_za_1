@@ -440,17 +440,19 @@ function App() {
           <div className="mt-16 text-center">
             <div className="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Worried about needing changes later?
+                Concerned about needing changes later?
               </h3>
               <p className="text-gray-600 mb-6">
                 Life happens, businesses evolve. Updates and changes are just{" "}
                 <strong>R200 </strong> for basic changes to details, contact
                 information, promotions, etc. – no hidden fees, no monthly
-                contracts or bills.
+                contracts or bills, just what you need at a price that works.
               </p>
-              <p className="text-lg font-semibold text-blue-600">
-                Custom development projects? Let's chat about what you need.
-              </p>
+              <a href="#contact">
+                <p className="text-lg font-semibold text-blue-600">
+                  Custom development projects? Let's chat about what you need.
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -1160,9 +1162,12 @@ function App() {
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-6">
               <a href="#home">
-                <img src="../img/logo.png" style={{ width: "50px", height: "50px" }}></img>
+                <img
+                  src="../img/logo.png"
+                  style={{ width: "50px", height: "50px" }}
+                ></img>
               </a>
-                <span className="text-2xl font-bold">GetOnlineZA</span>
+              <span className="text-2xl font-bold">GetOnlineZA</span>
             </div>
             <p className="text-gray-400 mb-6">
               Helping small businesses get found online, one website at a time.

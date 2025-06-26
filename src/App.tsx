@@ -1229,7 +1229,19 @@ function App() {
                     placeholder="What do you do? Who are your customers? What's your biggest challenge right now?"
                   ></textarea>
                 </div>
-                <button type="submit" style={{ backgroundColor: "Blue", color: "white", borderRadius: "10px", width: "150px", height: "50px" }}>Send Message</button>
+                <button
+                  type="submit"
+                  style={{
+                    backgroundColor: "Blue",
+                    color: "white",
+                    borderRadius: "10px",
+                    width: "150px",
+                    height: "50px",
+                  }}
+                  onSubmit={handleSubmit}
+                >
+                  Send Message
+                </button>
                 {submitted && (
                   <p className="text-green-600 font-semibold">
                     Thanks! We'll be in touch soon.

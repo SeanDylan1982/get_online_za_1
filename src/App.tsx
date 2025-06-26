@@ -15,7 +15,6 @@ import {
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from 'react-image-gallery';
 import BackToTopButton from "@/components/BackToTopButton";
-// import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import { motion } from "framer-motion";
 import { Clock, ThumbsUp } from "lucide-react";
@@ -23,7 +22,7 @@ import { Clock, ThumbsUp } from "lucide-react";
 const images = [
   {
     original:
-      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery1.png", 
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery1.png",
     thumbnail:
       "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery1-1.png",
   },
@@ -56,6 +55,126 @@ const images = [
       "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery6.png",
     thumbnail:
       "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery6-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery7.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery7-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery8.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery8-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery9.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery9-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery10.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery10-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery11.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery11-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery12.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery12-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery13.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery13-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery14.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery14-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery15.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery15-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery16.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery16-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery17.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery17-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery18.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery18-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery19.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery19-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery20.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery20-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery21.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery21-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery22.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery22-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery23.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery23-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery24.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery24-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery25.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery25-1.png",
+  },
+  {
+    original:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery26.png",
+    thumbnail:
+      "https://raw.githubusercontent.com/SeanDylan1982/get_online_za_1/refs/heads/main/public/img/gallery26-1.png",
   },
 ];
 

@@ -11,7 +11,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <a href="#home">
-              
+              <img src="/img/logo.png" alt="Logo" className="h-10 w-10" /> 
             </a>
             <a href="#home">
               <p className="text-2xl font-bold text-gray-900">GetOnlineZA</p>

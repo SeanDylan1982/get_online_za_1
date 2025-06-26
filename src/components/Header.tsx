@@ -11,7 +11,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <a href="#home">
-              <Globe className="h-8 w-8 text-blue-600" />
+              
             </a>
             <a href="#home">
               <p className="text-2xl font-bold text-gray-900">GetOnlineZA</p>

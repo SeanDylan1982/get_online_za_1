@@ -116,7 +116,7 @@ function App() {
             </div>
           </div>
         </motion.div>
-      </section>  
+      </section>
       {/* Personal Touch Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -400,7 +400,7 @@ function App() {
           Browse some of the work we've done so far for happy clients all around
           South Africa.
         </p>
-        <div className="bg-white shadow-lg portfolio">
+        <div className="bg-white  portfolio">
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
@@ -448,15 +448,16 @@ function App() {
             ].map((site, idx) => (
               <div
                 key={idx}
-                className="overflow-hidden rounded-t-xl hover:shadow-2xl"
+                className="overflow-hidden rounded-t-xl hover:shadow-2xl hover:scale-105 transform transition duration-300"
                 style={{
-                  margin: "20px 0 20px 0",
+                  border: "solid 1px #ccc",
+                  margin: "20px 0 10px 0",
                 }}
               >
                 <img
                   src={site.img}
                   alt={site.title}
-                  className="w-full h-48 object-cover transform transition duration-300 hover:scale-105 hover:brightness-90"
+                  className="w-full h-48 object-fill transform transition duration-300 hover:scale-105 hover:brightness-90 mx-auto"
                 />
                 <div className="p-4 text-left">
                   <h3 className="text-xl font-semibold mb-1">{site.title}</h3>
@@ -1009,7 +1010,7 @@ function App() {
                     placeholder="What do you do? Who are your customers? What's your biggest challenge right now?"
                   ></textarea>
                 </div>
-
+                <input type="hidden" name="form-name" value="contact"/>
                 <button
                   type="submit"
                   className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors"

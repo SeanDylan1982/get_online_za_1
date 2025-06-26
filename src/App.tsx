@@ -18,6 +18,7 @@ import BackToTopButton from "@/components/BackToTopButton";
 import Header from "@/components/Header";
 import { motion } from "framer-motion";
 import { Clock, ThumbsUp } from "lucide-react";
+import { useState } from "react";
 
 const images = [
   {
@@ -178,7 +179,36 @@ const images = [
   },
 ];
 
+
+
 function App() {
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    setSubmitted(true);
+    // Reset form after submission
+    setFormData({
+      name: "",
+      business: "",
+      phone: "",
+      email: "",
+      package: "",
+      message: "",
+    });
+  };
+    
+  const [formData, setFormData] = useState({
+    name: "",
+    business: "",
+    phone: "",
+    email: "",
+    package: "",
+    message: "",
+  });
+  
   return (
     <div id="home" className="min-h-screen bg-white">
       {/* Header */}
@@ -1018,7 +1048,9 @@ function App() {
                     <h4 className="font-semibold text-gray-900">
                       Call or WhatsApp
                     </h4>
-                    <p className="text-gray-600"><a href="tel:+27 64 988 4235"> +27 64 988 4235</a></p>
+                    <p className="text-gray-600">
+                      <a href="tel:+27 64 988 4235"> +27 64 988 4235</a>
+                    </p>
                     <p className="text-sm text-gray-500">
                       Available 8am-6pm, Mon-Fri
                     </p>
@@ -1029,7 +1061,12 @@ function App() {
                   <Mail className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600"><a href="mailto:hello@getonlineza.co.za"> hello@getonlineza.co.za</a></p>
+                    <p className="text-gray-600">
+                      <a href="mailto:hello@getonlineza.co.za">
+                        {" "}
+                        hello@getonlineza.co.za
+                      </a>
+                    </p>
                     <p className="text-sm text-gray-500">
                       I usually respond within 2 hours
                     </p>
@@ -1063,7 +1100,14 @@ function App() {
 
             {/* Contact Form */}
             <div>
-              <form className="space-y-6">
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
+              >
+                <input type="hidden" name="form-name" value="contact" />{" "}
                 <div>
                   <label
                     htmlFor="name"
@@ -1072,13 +1116,17 @@ function App() {
                     Your Name
                   </label>
                   <input
+                    name="name"
                     type="text"
                     id="name"
+                    value={formData.name}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="What should I call you?"
                   />
                 </div>
-
                 <div>
                   <label
                     htmlFor="business"
@@ -1087,13 +1135,17 @@ function App() {
                     Your Business
                   </label>
                   <input
+                    name="business"
                     type="text"
                     id="business"
+                    value={formData.business}
+                    onChange={(e) =>
+                      setFormData({ ...formData, business: e.target.value })
+                    }
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="What kind of business do you run?"
                   />
                 </div>
-
                 <div>
                   <label
                     htmlFor="phone"
@@ -1102,13 +1154,17 @@ function App() {
                     Phone Number
                   </label>
                   <input
+                    name="phone"
                     type="tel"
                     id="phone"
+                    value={formData.phone}
+                    onChange={(e) =>
+                      setFormData({ ...formData, phone: e.target.value })
+                    }
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="Best number to reach you"
                   />
                 </div>
-
                 <div>
                   <label
                     htmlFor="email"
@@ -1117,13 +1173,17 @@ function App() {
                     Email Address
                   </label>
                   <input
-                    type="tel"
-                    id="phone"
+                    name="email"
+                    type="email"
+                    id="email"
+                    value={formData.email}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="If you'd prefer a reply in writing"
                   />
                 </div>
-
                 <div>
                   <label
                     htmlFor="package"
@@ -1132,7 +1192,12 @@ function App() {
                     Interested In
                   </label>
                   <select
+                    name="package"
                     id="package"
+                    value={formData.package}
+                    onChange={(e) =>
+                      setFormData({ ...formData, package: e.target.value })
+                    }
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   >
                     <option value="">Not sure yet - let's discuss</option>
@@ -1144,7 +1209,7 @@ function App() {
                     <option value="custom">Custom Development</option>
                   </select>
                 </div>
-
+                <input type="hidden" name="bot-field" />
                 <div>
                   <label
                     htmlFor="message"
@@ -1153,18 +1218,23 @@ function App() {
                     Tell Me About Your Business
                   </label>
                   <textarea
+                    name="message"
                     id="message"
                     rows={4}
+                    value={formData.message}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="What do you do? Who are your customers? What's your biggest challenge right now?"
                   ></textarea>
                 </div>
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                >
-                  Send Message
-                </button>
+                <button type="submit" style={{ backgroundColor: "Blue", color: "white", borderRadius: "10px", width: "150px", height: "50px" }}>Send Message</button>
+                {submitted && (
+                  <p className="text-green-600 font-semibold">
+                    Thanks! We'll be in touch soon.
+                  </p>
+                )}
               </form>
             </div>
           </div>

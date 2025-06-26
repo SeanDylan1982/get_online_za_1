@@ -10,11 +10,15 @@ import {
   CheckCircle,
   ArrowRight,
   Heart,
-  Coffee,
   Handshake
 } from 'lucide-react';
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from 'react-image-gallery';
+import BackToTopButton from "@/components/BackToTopButton";
+// import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
+import { motion } from "framer-motion";
+import { Clock, ThumbsUp } from "lucide-react";
 
 const images = [
   {
@@ -57,91 +61,62 @@ const images = [
 
 function App() {
   return (
-    <div id="#home" className="min-h-screen bg-white">
+    <div id="home" className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-2">
-              <Globe className="h-8 w-8 text-blue-600" />
-              <a href="#">
-                <span className="text-2xl font-bold text-gray-900">
-                  GetOnlineZA
-                </span>
-              </a>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <a
-                href="#services"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                Services
-              </a>
-              <a
-                href="#why-online"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                Why Go Online?
-              </a>
-              <a
-                href="#how-it-works"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                How It Works
-              </a>
-              <a
-                href="#gallery"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                Gallery
-              </a>
-              <a
-                href="#testimonials"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                Testimonials
-              </a>
-              <a
-                href="#contact"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
-              >
-                Get Started
-              </a>
-            </nav>
-          </div>
-        </div>
-      </header>
-
+      <Header />
       {/* Hero Section */}
-      <section className="pt-16 pb-20 bg-gradient-to-br from-blue-50 to-green-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Your Business Deserves to be
-              <span className="text-blue-600"> Found</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              I help small businesses like yours get noticed by the people who
-              need your services. No complicated jargon, no endless contracts –
-              just a simple way to get online and get found.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href="#services"
-                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center group"
-              >
-                See Your Options
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </a>
-              <div className="flex items-center text-gray-600">
-                <Coffee className="h-5 w-5 mr-2 text-amber-600" />
-                <span>From R500 • Setup within 5 days</span>
-              </div>
+      <section
+        id="home"
+        className="relative min-h-screen bg-gradient-to-b from-white via-blue-50 to-blue-100 flex items-center justify-center overflow-hidden"
+      >
+        {/* Background image overlay */}
+        <img
+          src="/img/hero_background.webp"
+          alt="Hero Background"
+          className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none z-0"
+        />
+
+        {/* Hero content */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="relative z-10 text-center px-4 max-w-3xl"
+        >
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
+            Your Business Deserves to be{" "}
+            <span className="text-blue-600">Found</span>
+          </h1>
+          <br></br>
+          <p className="mt-6 text-lg sm:text-xl text-gray-700">
+            I help small businesses like yours get noticed by the people who
+            need your services. No complicated jargon, no endless contracts —
+            just a simple way to get online and get found.
+          </p>
+          <a
+            href="#contact"
+            className="mt-8 inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all shadow-md"
+          >
+            See Your Options <ArrowRight className="w-4 h-4" />
+          </a>
+
+          {/* Trust markers */}
+          <div className="mt-6 flex flex-wrap justify-center gap-6 text-gray-500 text-sm">
+            <div className="flex items-center gap-2">
+              <CheckCircle className="w-5 h-5 text-green-500" />
+              No monthly fees
+            </div>
+            <div className="flex items-center gap-2">
+              <Clock className="w-5 h-5 text-blue-500" />
+              Ready in 2–5 days
+            </div>
+            <div className="flex items-center gap-2">
+              <ThumbsUp className="w-5 h-5 text-purple-500" />
+              Designed for mobile
             </div>
           </div>
-        </div>
-      </section>
-
+        </motion.div>
+      </section>  
       {/* Personal Touch Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -164,7 +139,6 @@ function App() {
           </div>
         </div>
       </section>
-
       {/* Services Section */}
       <section id="services" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -205,7 +179,7 @@ function App() {
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">
-                    Your own .co.za Domain Name Included and Free Hosting
+                    Free hosting and sub-domain with Netlify
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -314,8 +288,8 @@ function App() {
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">
-                    Professional email setup: you@yourbusiness.co.za (multiple
-                    accounts available)
+                    You very own business-ready, professional .co.za Domain name
+                    and free hosting!
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -328,8 +302,7 @@ function App() {
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">
-                    Securely hosted on South African servers for fast, reliable
-                    access
+                    Securely hosted on Netlify servers for fast, reliable access
                   </span>
                 </li>
               </ul>
@@ -363,7 +336,6 @@ function App() {
           </div>
         </div>
       </section>
-
       {/* Why Go Online Section */}
       <section id="why-online" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -422,7 +394,89 @@ function App() {
           </div>
         </div>
       </section>
-
+      <section id="portfolio" className="py-20 px-6 bg-white text-center">
+        <h2 className="text-4xl font-bold text-gray-900 mb-6">Portfolio</h2>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          Browse some of the work we've done so far for happy clients all around
+          South Africa.
+        </p>
+        <div className="bg-white shadow-lg portfolio">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                title: "Apex Labour Solutions",
+                description:
+                  "Detailed descriptions, contact details and Google Search and Maps listings.",
+                img: "../portfolio/apexlabour.png",
+                url: "https://apexlaboursolutionsportfolio.netlify.app/",
+              },
+              {
+                title: "Denachem",
+                description:
+                  "Simple one-page, contact details and Google Search and Maps listings.",
+                img: "../portfolio/denachem.png",
+                url: "https://denachemportfolio.netlify.app/",
+              },
+              {
+                title: "Dev Profile Solutions",
+                description:
+                  "Simple layout, contact details and Google Search and Maps listings.",
+                img: "../portfolio/devprofile.png",
+                url: "https://devprofileportfolio.netlify.app/",
+              },
+              {
+                title: "E-Force Security Solutions",
+                description:
+                  "Basic, clear layout, contact details and Google Search and Maps listings.",
+                img: "../portfolio/eforce.png",
+                url: "https://eforcesecurityportfolio.netlify.app/",
+              },
+              {
+                title: "The Glass Resorting Company",
+                description:
+                  "Clean one pager, contact details and Google Search and Maps listings.",
+                img: "../portfolio/tgrc.png",
+                url: "https://tgrcportfolio.netlify.app/",
+              },
+              {
+                title: "Trillion Cleaning Services",
+                description:
+                  "Simple one-pager, contact details and Google Search and Maps listings.",
+                img: "../portfolio/trillion.png",
+                url: "https://trillionportfolio.netlify.app/",
+              },
+            ].map((site, idx) => (
+              <div
+                key={idx}
+                className="overflow-hidden rounded-t-xl hover:shadow-2xl"
+                style={{
+                  margin: "20px 0 20px 0",
+                }}
+              >
+                <img
+                  src={site.img}
+                  alt={site.title}
+                  className="w-full h-48 object-cover transform transition duration-300 hover:scale-105 hover:brightness-90"
+                />
+                <div className="p-4 text-left">
+                  <h3 className="text-xl font-semibold mb-1">{site.title}</h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    {site.description}
+                  </p>
+                  <a
+                    href={site.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    View Site →
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       {/*    Works */}
       <section id="how-it-works" className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -524,7 +578,6 @@ function App() {
           </div>
         </div>
       </section>
-
       {/* Gallery Section */}
       <section id="gallery" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -549,17 +602,19 @@ function App() {
           ;
         </div>
       </section>
-
       <section id="testimonials" className="py-12 bg-gray-50 sm:py-16 lg:py-20">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-col items-center">
             <div className="text-center">
+              <h2
+                className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj"
+                style={{ marginBottom: "35px" }}
+              >
+                What our happy clients have to say about us
+              </h2>
               <p className="text-lg font-medium text-gray-600 font-pj">
                 Loads of people have said how good we are
               </p>
-              <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
-                What our happy clients have to say about us
-              </h2>
             </div>
 
             <div className="mt-8 text-center md:mt-16 md:order-3"></div>
@@ -579,6 +634,24 @@ function App() {
                 <div className="flex flex-col overflow-hidden shadow-xl">
                   <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                     <div className="flex-1">
+                      <div
+                        className="flex items-center mt-8"
+                        style={{ marginBottom: "35px" }}
+                      >
+                        <img
+                          className="flex-shrink-0 object-cover rounded-full w-11 h-11"
+                          src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png"
+                          alt=""
+                        />
+                        <div className="ml-4">
+                          <p className="text-base font-bold text-gray-900 font-pj">
+                            Emmanuel Nkosinathi
+                          </p>
+                          <p className="mt-0.5 text-sm font-pj text-gray-600">
+                            Venda Brothers Chysa Nyama, Benoni
+                          </p>
+                        </div>
+                      </div>
                       <div className="flex items-center">
                         <svg
                           className="w-5 h-5 text-[#FDB241]"
@@ -624,27 +697,14 @@ function App() {
 
                       <blockquote className="flex-1 mt-8">
                         <p className="text-lg leading-relaxed text-gray-900 font-pj">
-                          “You made it so simple. My new site is so much faster
-                          and easier to work with than my old site. I just
-                          choose the page, make the change.”
+                          “We used to rely only on word of mouth — now when
+                          people search for “Chisa Nyama near me” we show up on
+                          Google! Sean helped us get listed and made a one-page
+                          website with our menu. My orders went up in just a few
+                          days. No complicated stuff, just exactly what I
+                          needed.”
                         </p>
                       </blockquote>
-                    </div>
-
-                    <div className="flex items-center mt-8">
-                      <img
-                        className="flex-shrink-0 object-cover rounded-full w-11 h-11"
-                        src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png"
-                        alt=""
-                      />
-                      <div className="ml-4">
-                        <p className="text-base font-bold text-gray-900 font-pj">
-                          Leslie Alexander
-                        </p>
-                        <p className="mt-0.5 text-sm font-pj text-gray-600">
-                          Freelance React Developer
-                        </p>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -652,6 +712,21 @@ function App() {
                 <div className="flex flex-col overflow-hidden shadow-xl">
                   <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                     <div className="flex-1">
+                      <div className="flex items-center mt-8">
+                        <img
+                          className="flex-shrink-0 object-cover rounded-full w-11 h-11"
+                          src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png"
+                          alt=""
+                        />
+                        <div className="ml-4" style={{ marginBottom: "35px" }}>
+                          <p className="text-base font-bold text-gray-900 font-pj">
+                            Jonas Jacobs
+                          </p>
+                          <p className="mt-0.5 text-sm font-pj text-gray-600">
+                            Mobile Mechanic, Pretoria
+                          </p>
+                        </div>
+                      </div>
                       <div className="flex items-center">
                         <svg
                           className="w-5 h-5 text-[#FDB241]"
@@ -697,27 +772,15 @@ function App() {
 
                       <blockquote className="flex-1 mt-8">
                         <p className="text-lg leading-relaxed text-gray-900 font-pj">
-                          “Simply the best. Better than all the rest. I’d
-                          recommend this product to beginners and advanced
-                          users.”
+                          “I thought websites were for big businesses with
+                          offices and staff. But Sean explained how having a
+                          simple site would help people trust me more. He made a
+                          site with my contact number, service list, and a few
+                          customer reviews. Now I get more serious calls instead
+                          of time-wasters, and my business looks legit online.
+                          It’s made a real difference.”
                         </p>
                       </blockquote>
-                    </div>
-
-                    <div className="flex items-center mt-8">
-                      <img
-                        className="flex-shrink-0 object-cover rounded-full w-11 h-11"
-                        src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png"
-                        alt=""
-                      />
-                      <div className="ml-4">
-                        <p className="text-base font-bold text-gray-900 font-pj">
-                          Jacob Jones
-                        </p>
-                        <p className="mt-0.5 text-sm font-pj text-gray-600">
-                          Digital Marketer
-                        </p>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -725,6 +788,24 @@ function App() {
                 <div className="flex flex-col overflow-hidden shadow-xl">
                   <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                     <div className="flex-1">
+                      <div
+                        className="flex items-center mt-8"
+                        style={{ marginBottom: "35px" }}
+                      >
+                        <img
+                          className="flex-shrink-0 object-cover rounded-full w-11 h-11"
+                          src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png"
+                          alt=""
+                        />
+                        <div className="ml-4">
+                          <p className="text-base font-bold text-gray-900 font-pj">
+                            Jenny Wilson
+                          </p>
+                          <p className="mt-0.5 text-sm font-pj text-gray-600">
+                            Graphic Designer, Kempton Park
+                          </p>
+                        </div>
+                      </div>
                       <div className="flex items-center">
                         <svg
                           className="w-5 h-5 text-[#FDB241]"
@@ -770,27 +851,15 @@ function App() {
 
                       <blockquote className="flex-1 mt-8">
                         <p className="text-lg leading-relaxed text-gray-900 font-pj">
-                          “I cannot believe that I have got a brand new landing
-                          page after getting Omega. It was super easy to edit
-                          and publish.”
+                          “We were only using Instagram to sell, but not
+                          everyone has social media. Sean made us a beautiful
+                          website that links to our WhatsApp and shows off our
+                          latest designs. It feels like a real shop. We even got
+                          a .co.za domain and free hosting with the premium
+                          package. Now we have a place to send people when they
+                          ask what we do.”
                         </p>
                       </blockquote>
-                    </div>
-
-                    <div className="flex items-center mt-8">
-                      <img
-                        className="flex-shrink-0 object-cover rounded-full w-11 h-11"
-                        src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png"
-                        alt=""
-                      />
-                      <div className="ml-4">
-                        <p className="text-base font-bold text-gray-900 font-pj">
-                          Jenny Wilson
-                        </p>
-                        <p className="mt-0.5 text-sm font-pj text-gray-600">
-                          Graphic Designer
-                        </p>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -799,7 +868,6 @@ function App() {
           </div>
         </div>
       </section>
-
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -860,7 +928,7 @@ function App() {
 
             {/* Contact Form */}
             <div>
-              <form className="space-y-6" name="contact" netlify>
+              <form className="space-y-6">
                 <div>
                   <label
                     htmlFor="name"
@@ -953,7 +1021,7 @@ function App() {
           </div>
         </div>
       </section>
-
+      <BackToTopButton />
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

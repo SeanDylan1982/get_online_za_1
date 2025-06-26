@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.portfolio {
+  padding: 50px 0 50px 0;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+

@@ -732,7 +732,7 @@ function App() {
                 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj"
                 style={{ marginBottom: "35px" }}
               >
-                What some our clients have to say about us...
+                What some of our clients have had to say about us...
               </h2>
               <p className="text-lg font-medium text-gray-600 font-pj">
                 Loads of people have said how good we are at what we do and we

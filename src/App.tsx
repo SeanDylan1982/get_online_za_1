@@ -19,6 +19,7 @@ import Header from "@/components/Header";
 import { motion } from "framer-motion";
 import { Clock, ThumbsUp } from "lucide-react";
 import { useState } from "react";
+import Footer from "@/components/Footer";
 
 const images = [
   {
@@ -341,7 +342,7 @@ function App() {
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">
-                    Basic SEO setup to help you rank higher in local searches
+                    SEO setup to help you rank higher in local searches
                   </span>
                 </li>
               </ul>
@@ -398,7 +399,7 @@ function App() {
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
                   <span className="text-gray-700">
-                    Basic social media optimization and integration
+                    Social media optimization and integration
                   </span>
                 </li>
               </ul>
@@ -1254,35 +1255,8 @@ function App() {
       </section>
       <BackToTopButton />
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="flex items-center justify-center space-x-2 mb-6">
-              <a href="#home">
-                <img
-                  src="../img/logo.png"
-                  style={{ width: "50px", height: "50px" }}
-                ></img>
-              </a>
-              <span className="text-2xl font-bold">GetOnlineZA</span>
-            </div>
-            <p className="text-gray-400 mb-6">
-              Helping small businesses get found online, one website at a time.
-            </p>
-            <div className="flex justify-center space-x-6 text-gray-400">
-              <span>hello@getonlineza.co.za</span>
-              <span>•</span>
-              <span>+27 64 988 4235</span>
-            </div>
-            <div className="mt-8 pt-8 border-t border-gray-800 text-sm text-gray-500">
-              <p>
-                &copy; 2025 GetOnlineZA. Made with care for small businesses
-                across South Africa.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      
+      <Footer />
     </div>
   );
 }

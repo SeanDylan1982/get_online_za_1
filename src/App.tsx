@@ -10,8 +10,9 @@ import {
   CheckCircle,
   ArrowRight,
   Heart,
-  Handshake
-} from 'lucide-react';
+  Handshake,
+  MessageCirclePlus,
+} from "lucide-react";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from 'react-image-gallery';
 import BackToTopButton from "@/components/BackToTopButton";
@@ -20,6 +21,12 @@ import { motion } from "framer-motion";
 import { Clock, ThumbsUp } from "lucide-react";
 import { useState } from "react";
 import Footer from "@/components/Footer";
+import BlurText from "@/components/BlurText";
+import { SocialIcon } from "react-social-icons/component";
+import "react-social-icons/whatsapp";
+import "react-social-icons/facebook";
+import "react-social-icons/instagram";
+import "react-social-icons/twitter";
 
 const images = [
   {
@@ -228,17 +235,26 @@ function App() {
 
         {/* Hero content */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: -5 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
           className="relative z-10 text-center px-4 max-w-3xl"
         >
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-700">
             Your Business Deserves to be{" "}
-            <span className="text-blue-600">Found</span>
           </h1>
+          <p className="Blur-text glow roboto-Blur-tex">
+            <BlurText
+              text="Found"
+              delay={15000}
+              animateBy="words"
+              direction="top"
+              className="text-xl mb-6 BlurText glow"
+            />
+          </p>
+          {/* <span className="text-blue-600">Found</span> */}
           <br></br>
-          <p className="mt-6 text-lg sm:text-xl text-gray-700">
+          <p className="mt-2 text-lg sm:text-xl text-gray-700">
             I help small businesses like yours get noticed by the people who
             need your services. No complicated jargon, no endless contracts —
             just a simple way to get online and get found.
@@ -1024,21 +1040,21 @@ function App() {
         </div>
       </section>
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+      <section id="contact" className="py-20 bg-white w-full">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8  w-full">
+          <div className="text-center mb-16 w-full">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6 w-full">
               Ready to Get Online?
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-600 w-full">
               Let's chat about your business and find the right solution for
               you.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-12 w-full">
             {/* Contact Info */}
-            <div>
+            <div className="w-full">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 Get in Touch
               </h3>
@@ -1091,16 +1107,60 @@ function App() {
                   </div>
                 </div>
               </div>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458313.926244964!2d27.966705329199637!3d-26.177884342416256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953b130fe6fc71%3A0x902bd4f28795ce54!2sCity%20of%20Ekurhuleni%20Metropolitan%20Municipality!5e0!3m2!1sen!2sza!4v1750930701466!5m2!1sen!2sza"
-                width="385"
-                height="280"
-                loading="lazy"
-              ></iframe>
+              <div className="flex items-start space-x-4">
+                <MessageCirclePlus className="h-6 w-6 text-blue-600 mt-1" />
+                <div>
+                  <h4
+                    className="font-semibold text-gray-900"
+                    style={{ marginBottom: 10 }}
+                  >
+                    Reach out online
+                  </h4>
+                  <p className="text-gray-600">
+                    <SocialIcon
+                      url="www.whatsapp.com"
+                      href="https://wa.me/27649884235"
+                      target="_blank"
+                      network="whatsapp"
+                      style={{
+                        height: 50,
+                        width: 50,
+                        marginLeft: 0,
+                        marginRight: 10,
+                      }}
+                      id="socials"
+                    />
+                    <SocialIcon
+                      url="www.facebook.com"
+                      href="https://www.facebook.com/profile.php?id=61577893767206"
+                      target="_blank"
+                      network="facebook"
+                      style={{ height: 50, width: 50, margin: 10 }}
+                      id="socials"
+                    />
+                    <SocialIcon
+                      url="www.instagram.com"
+                      href="https://www.instagram.com/getonlineza/"
+                      target="_blank"
+                      network="instagram"
+                      style={{ height: 50, width: 50, margin: 10 }}
+                      id="socials"
+                    />
+                    <SocialIcon
+                      url="www.twitter.com"
+                      href="https://x.com/GetOnline_ZA"
+                      target="_blank"
+                      network="twitter"
+                      style={{ height: 50, width: 50, margin: 10 }}
+                      id="socials"
+                    />
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Contact Form */}
-            <div>
+            <div className="grid mb-4 w-full">
               <form
                 name="contact"
                 method="POST"
@@ -1109,10 +1169,10 @@ function App() {
                 onSubmit={handleSubmit}
               >
                 <input type="hidden" name="form-name" value="contact" />{" "}
-                <div>
+                <div className="block mb-4 w-full">
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 mb-2 ml-1"
                   >
                     Your Name
                   </label>
@@ -1128,10 +1188,10 @@ function App() {
                     placeholder="What should I call you?"
                   />
                 </div>
-                <div>
+                <div className="block mb-4 w-full">
                   <label
                     htmlFor="business"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 mb-2 ml-1"
                   >
                     Your Business
                   </label>
@@ -1147,10 +1207,10 @@ function App() {
                     placeholder="What kind of business do you run?"
                   />
                 </div>
-                <div>
+                <div className="block mb-4  w-full">
                   <label
                     htmlFor="phone"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 mb-2 ml-1"
                   >
                     Phone Number
                   </label>
@@ -1166,10 +1226,10 @@ function App() {
                     placeholder="Best number to reach you"
                   />
                 </div>
-                <div>
+                <div className="block mb-4 w-full">
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 mb-2 ml-1"
                   >
                     Email Address
                   </label>
@@ -1185,10 +1245,10 @@ function App() {
                     placeholder="If you'd prefer a reply in writing"
                   />
                 </div>
-                <div>
+                <div className="block mb-4 w-full">
                   <label
                     htmlFor="package"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 mb-2 ml-1"
                   >
                     Interested In
                   </label>
@@ -1211,10 +1271,10 @@ function App() {
                   </select>
                 </div>
                 <input type="hidden" name="bot-field" />
-                <div>
+                <div className="block mb-4 w-full">
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 mb-2 ml-1"
                   >
                     Tell Me About Your Business
                   </label>
@@ -1255,7 +1315,7 @@ function App() {
       </section>
       <BackToTopButton />
       {/* Footer */}
-      
+
       <Footer />
     </div>
   );

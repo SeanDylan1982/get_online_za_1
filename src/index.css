@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,5 +11,60 @@
 html
 {
   scroll-behavior: smooth;
+  font-family: Roboto;  
 }
 
+html::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px#18318244;
+  background-color:#7d9dc310;
+}
+
+html::-webkit-scrollbar
+{
+  width: 10px;
+  background-color:#132b482d;
+}
+
+html::-webkit-scrollbar-thumb
+{
+  background-color:#1337632f;
+  border-radius: 1px;
+  border: 1px solid #333;
+}
+  
+.roboto-Blur-text {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "width" 500;
+}
+
+.BlurText {
+  color: #3f6bf0;
+  margin-top: 10px;
+  font-weight: 800;
+  font-display: optional;
+  font-optical-sizing: auto;
+  font-variation-settings: "wght" 800, "wdth" 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-feature-settings: "calt" 1, "kern" 1;
+  font-kerning: normal;
+  font-size: 5rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  font-family: Roboto, sans-serif;
+}
+
+#socials:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.5s ease-in-out;
+}

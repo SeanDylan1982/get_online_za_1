@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Globe, Menu, X } from "lucide-react"; // Ensure lucide-react is installed
+import { Menu, X } from "lucide-react"; // Ensure lucide-react is installed
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -79,7 +79,7 @@ const Header = () => {
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 px-6 pb-6">
           <nav className="flex flex-col space-y-4 font-medium">
-            <a href="#services" onClick={() => setMenuOpen(false)}>
+            <a href="#services" onClick={() => setMenuOpen(false)} className="text-blue-600">
               Services
             </a>
             <a href="#why-online" onClick={() => setMenuOpen(false)}>

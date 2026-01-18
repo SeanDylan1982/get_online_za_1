@@ -1066,7 +1066,7 @@ function App() {
                       Call or WhatsApp
                     </h4>
                     <p className="text-gray-600">
-                      <a href="tel:+27 64 988 4235"> +27 64 988 4235</a>
+                      <a href="tel:+2779 618 5601"> +2779 618 5601</a>
                     </p>
                     <p className="text-sm text-gray-500">
                       Available 8am-6pm, Mon-Fri
@@ -1081,7 +1081,7 @@ function App() {
                     <p className="text-gray-600">
                       <a href="mailto:hello@getonlineza.co.za">
                         {" "}
-                        hello@getonlineza.co.za
+                        seanpatterson.work@gmail.com 
                       </a>
                     </p>
                     <p className="text-sm text-gray-500">
@@ -1119,7 +1119,7 @@ function App() {
                   <p className="text-gray-600">
                     <SocialIcon
                       url="www.whatsapp.com"
-                      href="https://wa.me/27649884235"
+                      href="https://wa.me/27796185601"
                       target="_blank"
                       network="whatsapp"
                       style={{

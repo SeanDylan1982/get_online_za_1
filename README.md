@@ -48,6 +48,8 @@ GetOnlineZA is a modern, responsive business website built with React, TypeScrip
 4. **Open your browser**
    Navigate to `http://localhost:5173`
 
+> Note: This project is a Vite application and needs to run through the Vite dev server or preview server. Do not use VS Code Live Server / Live Preview or open `index.html` directly in Chrome, because `.tsx` modules will be served with the wrong MIME type.
+
 ### Build for Production
 
 ```bash

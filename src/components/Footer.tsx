@@ -34,7 +34,7 @@ export default function Footer() {
               ></img>
             </a>
             <a href="#home">
-              <span className="text-2xl font-bold">GetOnlineZA</span>
+              <span className="text-2xl font-bold">MyBusinessOnline.co.za</span>
             </a>
           </div>
           <p className="text-gray-400 mb-6">
@@ -43,17 +43,17 @@ export default function Footer() {
           <div className="flex justify-center space-x-6 text-gray-400">
             <span>
               <a href="mailto:hello@getonlineza.co.za">
-                hello@getonlineza.co.za
+                info@mybusinessonline.co.za
               </a>
             </span>
             <span>•</span>
             <span>
-              <a href="tel:+27649884235">+27 64 988 4235</a>
+              <a href="tel:+27645189813">+27 64 518 9813</a>
             </span>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 text-sm text-gray-500">
             <p>
-              &copy; 2025 GetOnlineZA. Made with care for small businesses
+              &copy; 2025 MyBusinessOnline.co.za. Made with care for small businesses
               across South Africa.
             </p>
             <div className="space-x-4" style={{ marginTop: "15px" }}>

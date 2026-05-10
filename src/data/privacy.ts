@@ -1,9 +1,9 @@
 // src/data/privacy.ts
 const privacyPolicy = `
-🛡️ Privacy Policy — GetOnlineZA
+🛡️ Privacy Policy — MyBusinessOnline.co.za
 Last updated: 27 June 2025
 
-Welcome to GetOnlineZA. Your privacy matters to us. This policy explains how we handle your personal information in accordance with the Protection of Personal Information Act 4 of 2013 ("POPIA").
+Welcome to MyBusinessOnline.co.za. Your privacy matters to us. This policy explains how we handle your personal information in accordance with the Protection of Personal Information Act 4 of 2013 ("POPIA").
 
 By using our website or services, you confirm that you have read and agree to this Privacy Policy.
 
@@ -49,7 +49,7 @@ Our website may link to external platforms (e.g. social media, chat tools, payme
 Always check the privacy policies of any third-party services you choose to interact with.
 
 8. Legal Disclosures
-GetOnlineZA is a South African business operating in compliance with POPIA and applicable digital communication laws. You may receive electronic communication related to our services unless you opt out.
+MyBusinessOnline.co.za is a South African business operating in compliance with POPIA and applicable digital communication laws. You may receive electronic communication related to our services unless you opt out.
 
 9. Complaints or Questions
 If you believe your data has been mishandled or wish to lodge a complaint, you may contact the Information Regulator of South Africa:

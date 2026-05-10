@@ -1,12 +1,12 @@
 // src/data/privacy.ts
 const termsAndConditions = `
-📄 Terms and Conditions — GetOnlineZA
+📄 Terms and Conditions — MyBusinessOnline.co.za
 Effective Date: 27 June 2025
 
-These Terms and Conditions govern the provision of web design and related services by GetOnlineZA ("we", "our", or "us") to you ("the client", "you"). By engaging with our services and paying a deposit, you agree to the following terms.
+These Terms and Conditions govern the provision of web design and related services by MyBusinessOnline.co.za ("we", "our", or "us") to you ("the client", "you"). By engaging with our services and paying a deposit, you agree to the following terms.
 
 1. Scope of Services
-GetOnlineZA provides affordable web design, domain registration, business listings, and digital setup services tailored for small businesses and sole proprietors.
+MyBusinessOnline.co.za provides affordable web design, domain registration, business listings, and digital setup services tailored for small businesses and sole proprietors.
 
 Services may include, but are not limited to:
 One-page brochure websites
@@ -23,11 +23,11 @@ No website will be made live or transferred until full payment is received.
 All invoices must be paid via EFT or any mutually agreed-upon method.
 
 3. Ownership & Intellectual Property
-All website files, source code, images, designs, and associated assets remain the sole property of GetOnlineZA until payment is made in full.
+All website files, source code, images, designs, and associated assets remain the sole property of MyBusinessOnline.co.za until payment is made in full.
 Upon receipt of full payment, ownership of the final product (excluding third-party software, templates, or stock assets) is transferred to the client.
-The client's full codebase will be stored securely on GitHub.com, accessible by GetOnlineZA staff and the client.
+The client's full codebase will be stored securely on GitHub.com, accessible by MyBusinessOnline.co.za staff and the client.
 
-GetOnlineZA retains the right to showcase the project in its portfolio.
+MyBusinessOnline.co.za retains the right to showcase the project in its portfolio.
 
 4. Non-Payment Enforcement
 If the final 50% payment is not received within 7 calendar days of project completion:
@@ -69,7 +69,7 @@ Domain registration is subject to availability at the time of purchase and domai
 After the free period, renewal costs are the client’s responsibility unless otherwise agreed.
 
 10. Service Limitations
-GetOnlineZA does not guarantee specific traffic, ranking, or engagement metrics.
+MyBusinessOnline.co.za does not guarantee specific traffic, ranking, or engagement metrics.
 Services are offered as-is and subject to reasonable changes or interruptions due to technical constraints or third-party platform limitations.
 
 11. Termination & Refunds

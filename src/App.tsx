@@ -1079,9 +1079,9 @@ function App() {
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
                     <p className="text-gray-600">
-                      <a href="mailto:hello@getonlineza.co.za">
+                      <a href="mailto:info@mybusinessonline.co.za">
                         {" "}
-                        seanpatterson.work@gmail.com 
+                        info@mybusinessonline.co.za
                       </a>
                     </p>
                     <p className="text-sm text-gray-500">

@@ -240,7 +240,7 @@ function App() {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="relative z-10 text-center px-4 max-w-3xl"
         >
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-700" style={{ position: "relative"; top: "-50px" }}>
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-700" style={{ position: "relative"; top: "-150px" }}>
             Your Business Deserves to be{" "}
           </h1>
           <p className="Blur-text glow roboto-Blur-tex">

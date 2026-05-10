@@ -11,7 +11,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <a href="#home">
-              <img src="/img/MBO_logo.png" alt="MBO logo" className="h-10 w-10" />
+              <img src="/img/MBO_logo.png" alt="MBO logo" className="h-75 w-150" />
             </a>
           </div>
 

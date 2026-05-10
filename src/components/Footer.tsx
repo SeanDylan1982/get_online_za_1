@@ -30,7 +30,7 @@ export default function Footer() {
             <a href="#home">
               <img
                 src="/img/MBO_logo.png"
-                style={{ width: "50px", height: "50px" }}
+                style={{ width: "75px", height: "150px" }}
                 alt="MBO logo"
               />
             </a>

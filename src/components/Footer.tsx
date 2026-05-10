@@ -26,15 +26,13 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <div className="flex items-center justify-center space-x-2 mb-6">
+          <div className="flex items-center justify-center mb-6">
             <a href="#home">
               <img
-                src="../img/logo.png"
+                src="/img/MBO_logo.png"
                 style={{ width: "50px", height: "50px" }}
-              ></img>
-            </a>
-            <a href="#home">
-              <span className="text-2xl font-bold">MyBusinessOnline.co.za</span>
+                alt="MBO logo"
+              />
             </a>
           </div>
           <p className="text-gray-400 mb-6">

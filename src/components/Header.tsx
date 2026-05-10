@@ -9,12 +9,9 @@ const Header = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center">
             <a href="#home">
-              <img src="/img/logo.png" alt="Logo" className="h-10 w-10" /> 
-            </a>
-            <a href="#home">
-              <p className="text-2xl text-gray-900">MyBusinessOnline.co.za</p>
+              <img src="/img/MBO_logo.png" alt="MBO logo" className="h-10 w-10" />
             </a>
           </div>
 

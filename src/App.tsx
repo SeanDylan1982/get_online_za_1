@@ -11,7 +11,7 @@ import {
   ArrowRight,
   Heart,
   Handshake,
-  MessageCirclePlus,
+  MessageCirclePlus, 
 } from "lucide-react";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from 'react-image-gallery';
@@ -240,7 +240,7 @@ function App() {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="relative z-10 text-center px-4 max-w-3xl"
         >
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-700">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-700" style={{ position: "relative"; top: "-50px" }}>
             Your Business Deserves to be{" "}
           </h1>
           <p className="Blur-text glow roboto-Blur-tex">
@@ -1167,7 +1167,6 @@ function App() {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
-                netlify
               >
                 <input type="hidden" name="form-name" value="contact" />{" "}
                 <div className="block mb-4 w-full">

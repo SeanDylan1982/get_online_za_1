@@ -1167,6 +1167,7 @@ function App() {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
+                netlify
               >
                 <input type="hidden" name="form-name" value="contact" />{" "}
                 <div className="block mb-4 w-full">

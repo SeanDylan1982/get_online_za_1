@@ -42,7 +42,7 @@ export default function Footer() {
           </p>
           <div className="flex justify-center space-x-6 text-gray-400">
             <span>
-              <a href="mailto:hello@getonlineza.co.za">
+              <a href="mailto:info@mybusinessonline.co.za">
                 info@mybusinessonline.co.za
               </a>
             </span>

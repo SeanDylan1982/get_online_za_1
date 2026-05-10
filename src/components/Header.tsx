@@ -14,7 +14,7 @@ const Header = () => {
               <img src="/img/logo.png" alt="Logo" className="h-10 w-10" /> 
             </a>
             <a href="#home">
-              <p className="text-2xl font-bold text-gray-900">MyBusinessOnline.co.za</p>
+              <p className="text-2xl text-gray-900">MyBusinessOnline.co.za</p>
             </a>
           </div>
 

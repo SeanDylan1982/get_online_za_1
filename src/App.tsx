@@ -241,7 +241,7 @@ function App() {
           className="relative z-10 text-center px-4 max-w-3xl"
           style={{
             textShadow: "0 2px 4px rgba(0, 0, 0, 0.1)"
-            top: "-20px",
+            top: "-120px",
           }}
         >
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-700" >

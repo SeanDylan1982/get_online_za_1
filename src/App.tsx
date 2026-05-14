@@ -225,6 +225,10 @@ function App() {
       <section
         id="home"
         className="relative min-h-screen bg-gradient-to-b from-white via-blue-50 to-blue-100 flex items-center justify-center overflow-hidden"
+        style={{
+            textShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+            top: "-120px",
+          }}
       >
         {/* Background image overlay */}
         <img
@@ -239,10 +243,7 @@ function App() {
           animate={{ opacity: 1, y: -5 }}
           transition={{ duration: 1, ease: "easeInOut" }}
           className="relative z-10 text-center px-4 max-w-3xl"
-          style={{
-            textShadow: "0 2px 4px rgba(0, 0, 0, 0.1)"
-            top: "-120px",
-          }}
+          
         >
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-700" >
             Your Business Deserves to be{" "}

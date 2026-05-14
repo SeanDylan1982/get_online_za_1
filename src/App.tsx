@@ -1163,10 +1163,10 @@ function App() {
             <div className="grid mb-4 w-full">
               <form
                 name="contact"
-                method="POST"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
+                netlify-honeypot="bot-field"
+                data-netlify="true"
+                className="w-full"
               >
                 <input type="hidden" name="form-name" value="contact" />{" "}
                 <div className="block mb-4 w-full">

@@ -6,8 +6,8 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 opacity-20">
-        <div className="flex justify-between items-center py-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4 opacity-20">
           {/* Logo */}
           <div className="flex items-center">
             <a href="#home">

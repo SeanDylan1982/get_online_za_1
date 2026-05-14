@@ -230,7 +230,7 @@ function App() {
         <img
           src="/img/hero_background.webp"
           alt="Hero Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none z-0"
+          className="sticky inset-0 w-full h-full object-cover opacity-30 pointer-events-none z-0"
         />
 
         {/* Hero content */}

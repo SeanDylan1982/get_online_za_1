@@ -5,9 +5,9 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50 bg-opacity-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 opacity-70">
-        <div className="flex justify-between items-center py-4 opacity-90">
+    <header className="bg-white shadow-sm sticky top-0 z-50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
             <a href="#home">
@@ -16,7 +16,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-8 bg-opacity-70">
+          <nav className="hidden md:flex space-x-8">
             <a
               href="#services"
               className="text-gray-700 hover:text-blue-600 transition-colors"

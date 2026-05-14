@@ -15,12 +15,12 @@ import {
 } from "lucide-react";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from 'react-image-gallery';
-import BackToTopButton from "@/components/BackToTopButton";
-import Header from "@/components/Header";
+import BackToTopButton from "./components/BackToTopButton";
+import Header from "./components/Header";
 import { motion } from "framer-motion";
 import { Clock, ThumbsUp } from "lucide-react";
 import { useState } from "react";
-import Footer from "@/components/Footer";
+import Footer from "./components/Footer";
 import BlurText from "@/components/BlurText";
 import { SocialIcon } from "react-social-icons/component";
 import "react-social-icons/whatsapp";
@@ -193,7 +193,7 @@ function App() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     setSubmitted(true);
@@ -1163,7 +1163,6 @@ function App() {
             <div className="grid mb-4 w-full">
               <form
                 name="contact"
-                netlify
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
@@ -1299,7 +1298,6 @@ function App() {
                     width: "150px",
                     height: "50px",
                   }}
-                  onSubmit={handleSubmit}
                 >
                   Send Message
                 </button>

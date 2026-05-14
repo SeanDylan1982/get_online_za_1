@@ -21,7 +21,7 @@ import { motion } from "framer-motion";
 import { Clock, ThumbsUp } from "lucide-react";
 import { useState } from "react";
 import Footer from "./components/Footer";
-import BlurText from "@/components/BlurText";
+import BlurText from "./components/BlurText";
 import { SocialIcon } from "react-social-icons/component";
 import "react-social-icons/whatsapp";
 import "react-social-icons/facebook";

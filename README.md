@@ -252,7 +252,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🤝 Support
 
-For support, email [seanpatterson.work@gmail.com](seanpatterson.work@gmail.com) or create an issue in the repository.
+For support, email [seanpatterson.work@gmail.com](mailto:seanpatterson.work@gmail.com) or create an issue in the repository.
 
 ## 🔗 Links
 

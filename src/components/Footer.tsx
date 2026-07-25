@@ -40,13 +40,13 @@ export default function Footer() {
           </p>
           <div className="flex justify-center space-x-6 text-gray-400">
             <span>
-              <a href="mailto:info@mybusinessonline.co.za">
-                info@mybusinessonline.co.za
+              <a href="mailto:seanpatterson.work@gmail.com">
+                seanpatterson.work@gmail.com
               </a>
             </span>
             <span>•</span>
             <span>
-              <a href="tel:+27645189813">+27 64 518 9813</a>
+              <a href="tel:+27796185601">+27 79 618 5601</a>
             </span>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 text-sm text-gray-500">

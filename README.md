@@ -256,9 +256,9 @@ For support, email [your-email@domain.com] or create an issue in the repository.
 
 ## 🔗 Links
 
-- [Live Demo](https://your-demo-url.com)
+- [Live Demo](https://mybusinessonline.co.za)
 - [Documentation](./docs/)
-- [Issue Tracker](https://github.com/your-username/getonlineza/issues)
+- [Issue Tracker](https://github.com/seandylan1982/getonlineza/issues)
 
 ---
 
